@@ -59,6 +59,27 @@
 
 <script>
 
+var key = document.getElementsByClassName('key');
+var val;
+// function event() {
+//   document.addEventListener("keydown", event => {
+//     val = event.keyCode;
+//     for(var i=0; i < key.length; i++) {
+//       if (val === key[i]) {
+//         console.log("foo" + key[i]);
+//       }
+//     }
+//   });
+// }
+
+//get key value
+console.log(key[0].dataset.key);
+
+var audio = document.getElementsByTagName('audio');
+for(var i = 0; i < audio.length; i++) {
+  console.log(audio[i].dataset.key);
+}
+
 </script>
 
 
